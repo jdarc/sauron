@@ -1,15 +1,6 @@
-# Title
+# Sauron
 
-## Requirements
-- Java 11
-
-## Compiling/Running
-```
-./gradlew run
-```
-
-# Attribution
-
+Trippy HTML5 canvas and wev audio demo.
 
 # License
 MIT License
