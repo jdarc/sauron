@@ -1,0 +1,41 @@
+body {
+    overflow: hidden;
+    user-select: none;
+    background-color: #000;
+}
+
+canvas {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+img.play {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 12%;
+    opacity: 0.9;
+    margin: auto;
+    position: fixed;
+    cursor: pointer;
+    transition-duration: .5s;
+    filter: hue-rotate(-0.5rad);
+    transform: scale(0.8) rotate(-1.57rad);
+    transition-property: transform, opacity, filter;
+}
+
+img:hover.play {
+    opacity: 1;
+    transform: scale(1);
+    filter: hue-rotate(0rad) blur(0px);
+}
+
+img.play.shrink {
+    opacity: 0;
+    filter: blur(2px);
+    transform: scale(0);
+}
